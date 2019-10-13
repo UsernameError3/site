@@ -12,10 +12,16 @@ module.exports = function(grunt) {
             },
             combine: {
                 files: {
-                    'static/css/bundle.min.css': [ 
+                    'static/css/bundle.min.css': [
                         'static/css/r*.min.css',
                         'static/css/so*.min.css',
                         'static/css/si*.min.css'
+                    ],
+
+                    'static/css/bundle.generator.min.css': [
+                        'static/css/r*.min.css',
+                        'static/css/so*.min.css',
+                        'static/css/gen*.min.css'
                     ]
                 }
             }
